@@ -1,0 +1,84 @@
+@import "./partials/footer.css";
+
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+    width: 30px;
+    border-radius: 10px;
+}
+
+.plan-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-button form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-button input {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 0;               
+  opacity: 0;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: width 0.3s ease, opacity 0.3s ease;
+
+}.search-button form:hover input,
+.search-button button:hover + input {
+  width: 250px;     
+  height: 50px;    
+  opacity: 1;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover, .plan-button img:hover, .menu img:hover {
+  transform: scale(1.1);
+}
+
+.menu {
+  position: relative;
+  padding: 10px;
+  background-color: rgb(197, 197, 197);
+}
+
+.menu-list {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  margin-top: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu:hover .menu-list {
+  display: block;
+  opacity: 1;
+}
+
+@media screen and (max-width:) {
+}

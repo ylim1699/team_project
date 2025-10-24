@@ -5,9 +5,41 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fitness</title>
+    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="./src/css/style.css"/>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <header>
+      <div class="page-title"></div>
+      <div class="menu">
+        <button id="toggleButton">
+          <img src="./src/images/menu.png" alt="menu image">
+        </button>
+        <div class="menu-list">
+          <div class="plan-button">
+            plan
+            <a href="#"><img src="./src/images/plan.png" alt="plan image"></a>
+          </div>
+          <div class="search-button">
+            <form>
+              <button><img src="./src/images/search.png" alt=""></button>
+              <input type="search" placeholder="Search the site..."/>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer>
+      <p>© 2025 workout planner webpage - All rights reserved - </p>
+        <nav>
+            <a href="https://facebook.com">
+                <img src="./src/images/facebook.jpg" alt="facebook link">
+            </a>
+            <a href="https://Instagram.com">
+                <img src="./src/images/instagram.jpg" alt="instagram link">
+            </a>
+        </nav>
+    </footer>
   </body>
 </html>
