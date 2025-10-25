@@ -6,8 +6,9 @@ footer {
     margin-top: 10%;
     padding: 2.5%;
     background-color: rgb(51, 51, 51);
-    color: white;
+    color: white; 
 }
+/* not sure what we want in the footer and the style. Can change with the overall theme and style */
 
 footer nav {
   display: flex;

@@ -9,20 +9,15 @@
   box-sizing: border-box;
 }
 
+/* not sure where to put the search button so I just placed it at the end. I'll place it somewhere after the other parts of the webpages are done */
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 header img {
     width: 30px;
     border-radius: 10px;
-}
-
-.plan-button {
-  display: flex;
-  flex-direction: column;
 }
 
 .search-button form {
@@ -59,26 +54,7 @@ button:hover, .plan-button img:hover, .menu img:hover {
   transform: scale(1.1);
 }
 
-.menu {
-  position: relative;
-  padding: 10px;
-  background-color: rgb(197, 197, 197);
-}
 
-.menu-list {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  position: absolute;
-  margin-top: 30%;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu:hover .menu-list {
-  display: block;
-  opacity: 1;
-}
 
 @media screen and (max-width:) {
 }
