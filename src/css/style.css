@@ -118,3 +118,32 @@ button:hover, .plan-button img:hover, .menu img:hover {
   flex-direction: row;
   align-items: center;
 }
+
+#searchForm {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 10px;
+  margin-left: 45%;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  text-align: center;
+}
+
+#searchBtn {
+  border: 2px solid #ccc;
+  padding: 10px 20px;
+  background-color: #95c3fe;
+  color: black;
+  border-radius: 5px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+}
