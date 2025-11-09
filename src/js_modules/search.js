@@ -1,3 +1,5 @@
+import { exerciseResultTemplate } from "./templates.mjs";
+
 function searchForExercises(key) {
     let type = document.getElementById("typeSelector").value;
     let muscle = document.getElementById("muscleSelector").value;
@@ -13,6 +15,17 @@ function searchForExercises(key) {
     .then(response => response.json())
     .then(data => {
         console.log(data);
+
+        const resultsContainer = document.querySelector('#exerciseResults');
+        resultsContainer.innerHTML = '';
+
+        if (data.length === 0) {
+            resultsContainer.innerHTML = '<p>No exercises found matching the criteria.</p>';
+            return;
+        }
+        
+       resultsContainer.innerHTML = data.map(exercise => exerciseResultTemplate(exercise)).join('');
+        
     }).catch(error => {
         console.error('Error:', error);
     });
