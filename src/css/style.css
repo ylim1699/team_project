@@ -169,6 +169,10 @@ h3 {
   width: 50%;
 }
 
+.exercise-card p {
+  margin-top: 1%;
+}
+
 .exercise-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: scale(1.02);
