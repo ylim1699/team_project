@@ -1,7 +1,9 @@
 import { searchForExercises } from "./js_modules/search.js";
-import { API_KEY } from "./config.example.js";    
+import { apiKey } from "../config.js";    
 
 document.getElementById("searchForm").addEventListener("submit", (e) => {
     e.preventDefault();
-    const search = searchForExercises(API_KEY);
+    const search = searchForExercises(apiKey);
 });
+
+// dfdf
