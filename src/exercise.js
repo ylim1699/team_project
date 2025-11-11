@@ -6,4 +6,3 @@ document.getElementById("searchForm").addEventListener("submit", (e) => {
     const search = searchForExercises(apiKey);
 });
 
-// dfdf
