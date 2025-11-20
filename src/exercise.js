@@ -8,5 +8,5 @@ document.getElementById("searchForm").addEventListener("submit", (e) => {
 });
 
 // import { apiKey } from "../config.js";   
-// I published it to netlify and added a environmental variable by importing
-// from .env
+// I published it to netlify and added a environmental variable by importing from .env
+

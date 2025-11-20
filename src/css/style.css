@@ -29,32 +29,14 @@ header img {
     border-radius: 10px;
 }
 
-.search-button {
+.menu-button {
   margin-right: 20px;
 }
 
-.search-button form {
+.menu-button form {
   position: relative;
   display: flex;
   flex-direction: column;
-}
-
-.search-button input {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 0;               
-  opacity: 0;
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: width 0.3s ease, opacity 0.3s ease;
-
-}.search-button form:hover input,
-.search-button button:hover + input {
-  width: 250px;     
-  height: 50px;    
-  opacity: 1;
 }
 
 button {
@@ -133,6 +115,7 @@ button:hover, .plan-button img:hover, .menu img:hover {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  margin-top: 5.5%;
 }
 
 h3 {
