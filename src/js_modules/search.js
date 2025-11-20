@@ -29,6 +29,6 @@ function searchForExercises(key) {
     }).catch(error => {
         console.error('Error:', error);
     });
-}djfkdjf
+}
 
 export { searchForExercises };

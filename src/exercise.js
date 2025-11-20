@@ -2,8 +2,8 @@ import { searchForExercises } from "./js_modules/search.js";
 // import { apiKey } from "../config.js";   
 const apiKey = import.meta.env.VITE_API_KEY;
 
+console.log(import.meta.env);
 console.log(apiKey);
-console.log('All env vars:', import.meta.env);
 console.log('VITE_API_KEY:', import.meta.env.VITE_API_KEY);
 
 // I published it to netlify and added a environmental variable by importing
