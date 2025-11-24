@@ -19,7 +19,7 @@ header a {
   color: inherit;
 }
 
-header a:hover {
+.site-title a:hover {
   font-size: 26px;
   transition: font-size 0.3s ease;
 }
@@ -29,11 +29,54 @@ header img {
     border-radius: 10px;
 }
 
-.menu-button {
+#menu-button {
   margin-right: 20px;
 }
 
-.menu-button form {
+#side-menu {
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  width: 200px;
+  height: 100%;
+  background-color: #bedaff;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+  transition: left 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+#side-menu.active {
+  transform: translateX(0);
+}
+
+#side-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  font-size: 20px;
+}
+
+#side-menu ul li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#side-menu ul li a {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#side-menu ul li a:hover {
+  text-decoration: underline
+}
+
+#menu-button form {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -45,7 +88,12 @@ button {
   cursor: pointer;
 }
 
-button:hover, .plan-button img:hover, .menu img:hover {
+.week-display a {
+  text-decoration: none;
+  color: black;
+}
+
+ .plan-button img:hover, #menu-button:hover, .week-display a:hover {
   transform: scale(1.1);
 }
 
@@ -150,6 +198,11 @@ h3 {
   margin: 10px 0;
   background-color: #f3f9ff;
   width: 50%;
+
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .exercise-card p {
@@ -161,6 +214,7 @@ h3 {
   transform: scale(1.02);
   transition: transform 0.2s ease;
 }
+
 
 @media screen and (max-width) {
 }

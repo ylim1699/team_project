@@ -1,4 +1,7 @@
 import { searchForExercises } from "./js_modules/search.js";
+import { toggleMenu } from './js_modules/menu.mjs';
+
+toggleMenu();
 
 const apiKey = import.meta.env.VITE_API_KEY;
 
