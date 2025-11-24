@@ -1,4 +1,4 @@
-import { toggleMenu } from './js_modules/menu.mjs';
+import { toggleMenu } from './js_modules/navigation.mjs';
 
 toggleMenu();
 
