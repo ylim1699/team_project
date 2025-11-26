@@ -1,4 +1,5 @@
 import { exerciseResultTemplate } from "./templates.mjs";
+import { addToRoutine } from "./storage.mjs";
 
 function searchForExercises(key) {
     let type = document.getElementById("typeSelector").value;
@@ -16,6 +17,7 @@ function searchForExercises(key) {
     .then(data => {
         console.log(data);
 
+        //search results
         const resultsContainer = document.querySelector('#exerciseResults');
         resultsContainer.innerHTML = '';
 
@@ -23,8 +25,27 @@ function searchForExercises(key) {
             resultsContainer.innerHTML = '<p>No exercises found matching the criteria.</p>';
             return;
         }
-        
-       resultsContainer.innerHTML = data.map(exercise => exerciseResultTemplate(exercise)).join('');
+        else {
+            data.sort((a, b) => a.name.localeCompare(b.name));
+            resultsContainer.innerHTML = data.map(exercise => exerciseResultTemplate(exercise)).join('');
+        }
+
+        // adding routine
+        document.querySelectorAll(".add-btn").forEach(btn => {
+            btn.addEventListener("click", ()=> {
+                let name = btn.getAttribute("data-name");
+                let exercise = data.find(e => e.name === name);
+
+                //checking to see if it adds the right workout
+                console.log(`adding routine: ${name}`);
+
+                if (addToRoutine(exercise)) {
+                    alert(`${exercise.name} added to routine!`);
+                } else {
+                    alert(`Already in your routine!`);
+                }
+            });
+        });
         
     }).catch(error => {
         console.error('Error:', error);
