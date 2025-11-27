@@ -25,7 +25,7 @@ export const exerciseIcons = [
     },
     {
         name: "olympic_weightlifting",
-        link: "./images/olympic.png"
+        link: "./src/images/olympic.png"
     }
 ];
 
