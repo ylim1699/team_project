@@ -4,219 +4,256 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
 header a {
-  text-decoration: none;
-  color: inherit;
+text-decoration: none;
+color: inherit;
 }
 
 .site-title a:hover {
-  font-size: 26px;
-  transition: font-size 0.3s ease;
+font-size: 26px;
+transition: font-size 0.3s ease;
 }
 
 header img {
-    width: 30px;
-    border-radius: 10px;
+width: 30px;
+border-radius: 10px;
 }
 
 #menu-button {
-  margin-right: 20px;
+margin-right: 20px;
 }
 
 #side-menu {
-  position: absolute;
-  top: 70px;
-  right: 0px;
-  width: 200px;
-  height: 100%;
-  background-color: #bedaff;
-  transition: left 0.3s ease;
-  padding-top: 60px;
-  z-index: 1000;
+position: absolute;
+top: 70px;
+right: 0px;
+width: 200px;
+height: 100%;
+background-color: #bedaff;
+transition: left 0.3s ease;
+padding-top: 60px;
+z-index: 1000;
 
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
+transform: translateX(100%);
+transition: transform 0.3s ease;
 }
 
 #side-menu.active {
-  transform: translateX(0);
+transform: translateX(0);
 }
 
 #side-menu ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 10px;
 
-  font-size: 20px;
+font-size: 20px;
 }
 
 #side-menu ul li {
-  margin: 20px 0;
-  text-align: center;
+margin: 20px 0;
+text-align: center;
 }
 
 #side-menu ul li a {
-  margin: 20px 0;
-  text-align: center;
+margin: 20px 0;
+text-align: center;
 }
 
 #side-menu ul li a:hover {
-  text-decoration: underline
+text-decoration: underline
 }
 
 #menu-button form {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+position: relative;
+display: flex;
+flex-direction: column;
 }
 
 button {
-  background: none;
-  border: none;
-  cursor: pointer;
+background: none;
+border: none;
+cursor: pointer;
 }
 
 .week-display a {
-  text-decoration: none;
-  color: black;
+text-decoration: none;
+color: black;
 }
 
- .plan-button img:hover, #menu-button:hover, .week-display a:hover {
-  transform: scale(1.1);
+.plan-button img:hover, #menu-button:hover, .week-display a:hover {
+transform: scale(1.1);
 }
 
 .week-display {
-  margin: 20px;
-  padding: 20px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+margin: 20px;
+padding: 20px;
+border: 2px solid #ccc;
+border-radius: 10px;
+background-color: #f9f9f9;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-family: "Outfit", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
 }
 
 .days-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 20px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  width: 90%;
-  height: 500px;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+padding: 10px;
+width: 100%;
+margin: 10px;
+border: 2px solid #ccc;
+border-radius: 10px;
+
+height: auto;      
+min-height: 650px;
 }
 
-.top-bar {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #95c3fe;
-  padding: 10px 0;
-  border-bottom: 2px solid #ccc;
-  color: black;
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  margin-bottom: 20px;
+.day-summary {
+margin-top: 10%;
+margin-bottom: 10%;
+text-align: center;
 }
 
-.site-title {
-  margin-left: 20px;
-  font-size: 24px;
+.addedExercise {
+padding: 5%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+
+.days-container img {
+width: 15px;
+height: auto;
+}
+
+
+.days-container li {
+list-style: none;
 }
 
 .days-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+min-height: 700px;
 }
 
+.top-bar {
+width: 100%;
+height: 70px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #95c3fe;
+padding: 10px 0;
+border-bottom: 2px solid #ccc;
+color: black;
+font-family: "Outfit", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+margin-bottom: 20px;
+}
+
+.site-title {
+margin-left: 20px;
+font-size: 24px;
+}
+
+
 #searchForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  margin-top: 5.5%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 10px;
+font-family: "Outfit", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+margin-top: 5.5%;
 }
 
 h3 {
-  text-align: center;
+text-align: center;
 }
 
 #searchBtn {
-  border: 2px solid #ccc;
-  padding: 10px 20px;
-  background-color: #95c3fe;
-  color: black;
-  border-radius: 5px;
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  margin-top: 20px;
+border: 2px solid #ccc;
+padding: 10px 20px;
+background-color: #95c3fe;
+color: black;
+border-radius: 5px;
+font-family: "Outfit", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+margin-top: 20px;
 }
 
 #exerciseResults {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 5%;
 } 
 
 .exercise-card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px 0;
-  background-color: #f3f9ff;
-  width: 50%;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+margin: 10px 0;
+background-color: #f3f9ff;
+width: 50%;
 
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+font-family: "Outfit", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
 }
 
 .exercise-card p {
-  margin-top: 1%;
+margin-top: 1%;
 }
 
 .exercise-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transform: scale(1.02);
-  transition: transform 0.2s ease;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transform: scale(1.02);
+transition: transform 0.2s ease;
 }
 
 .exercise-icon img {
-  width: 20px;
-  height: auto;
+width: 20px;
+height: auto;
+}
+
+.add-btn {
+margin-top: 3%;
+}
+
+.add-btn:hover {
+transform: scale(1.1);
 }
 
 

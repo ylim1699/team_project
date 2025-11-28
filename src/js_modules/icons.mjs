@@ -32,15 +32,18 @@ export const exerciseIcons = [
 export const exerciseDifficulty = [
     {
         name: "Beginner", 
-        link: "./images/beginner.png"
+        link: "./images/beginner.png",
+        value: "1"
     },
     {
         name: "intermediate", 
-        link: "./images/intermediate.png"
+        link: "./images/intermediate.png",
+        value: "2"
     },
     {
         name: "expert", 
-        link: "./images/expert.png"
+        link: "./images/expert.png",
+        value: "3"
     }
 
 ];
