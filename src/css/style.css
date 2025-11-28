@@ -12,6 +12,11 @@ box-sizing: border-box;
 header {
 display: flex;
 justify-content: space-between;
+
+position: sticky;
+top: 0;
+width: 100%;
+z-index: 1000;
 }
 
 header a {
@@ -34,11 +39,11 @@ margin-right: 20px;
 }
 
 #side-menu {
-position: absolute;
+position: fixed;
 top: 70px;
 right: 0px;
 width: 200px;
-height: 100%;
+height: 100vh;
 background-color: #bedaff;
 transition: left 0.3s ease;
 padding-top: 60px;
@@ -96,6 +101,11 @@ color: black;
 transform: scale(1.1);
 }
 
+.week-display h1 {
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
 .week-display {
 margin: 20px;
 padding: 20px;
@@ -124,6 +134,15 @@ border-radius: 10px;
 
 height: auto;      
 min-height: 650px;
+}
+
+.days-container h3 {
+    font-size: 25px;
+}
+
+.days-container p {
+    font-weight: 600;
+    color: rgb(29, 69, 129);
 }
 
 .day-summary {
@@ -186,12 +205,41 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-gap: 10px;
+gap: 15px;
 font-family: "Outfit", sans-serif;
 font-optical-sizing: auto;
 font-weight: 400;
 font-style: normal;
-margin-top: 5.5%;
+margin-top: 3%;
+}
+
+#searchForm h2 {
+    font-size: 40px;
+    margin-bottom: 2.5%;
+}
+
+#typeSelector {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#muscleSelector {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#difficultySelector {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#daySelector {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
 }
 
 h3 {
@@ -203,12 +251,17 @@ border: 2px solid #ccc;
 padding: 10px 20px;
 background-color: #95c3fe;
 color: black;
-border-radius: 5px;
+border-radius: 10px;
 font-family: "Outfit", sans-serif;
 font-optical-sizing: auto;
 font-weight: 400;
 font-style: normal;
-margin-top: 20px;
+margin-top: 50px;
+
+width: 150px;
+height: 60px;
+
+font-size: 24px;
 }
 
 #exerciseResults {

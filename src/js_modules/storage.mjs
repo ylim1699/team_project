@@ -11,7 +11,6 @@ export function renderRoutine() {
 
     days.forEach(day => {
         const list = document.getElementById(day);
-        const parent = list.parentElement
         if (!list) return; // skip if element not found
         list.innerHTML = "";
 

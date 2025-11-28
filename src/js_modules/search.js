@@ -4,7 +4,7 @@ function searchForExercises(key) {
     let type = document.getElementById("typeSelector").value;
     let muscle = document.getElementById("muscleSelector").value;
     let difficulty = document.getElementById("difficultySelector").value;
-    let day = document.getElementById("day-select").value;
+    let day = document.getElementById("daySelector").value;
     if (!day) {
         alert("please select a day first!");
         return;
