@@ -5,7 +5,7 @@ export const exerciseIcons = [
     },
     {
         name: "strength",
-        link: "images/strength.png"
+        link: "../images/strength.png"
     },
     {
         name: "stretching",

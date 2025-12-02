@@ -1,0 +1,133 @@
+@import "../style.css";
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(240, 240, 240);
+
+    background-color: rgb(83, 87, 99);
+    box-shadow: 2px 2px 12px rgb(73, 73, 73);
+    padding: 50px 0 50px 0;
+    width: 80%;
+    border-radius: 30px;
+    margin-top: 10% 
+}
+
+.form-container h2 {
+  font-size: 40px;
+  margin-bottom: 2.5%;
+  text-shadow: 1px 1px 12px rgb(155, 155, 155);
+}
+
+#searchForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 3%;
+  color: rgb(240, 240, 240);
+}
+
+#typeSelector,
+#muscleSelector,
+#difficultySelector,
+#daySelector {
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 12px black;
+}
+
+
+#typeSelector {
+  background-color: rgb(189, 189, 226);
+}
+
+#muscleSelector {
+  background-color: rgb(184, 184, 151);
+}
+
+#difficultySelector {
+  background-color: rgb(207, 178, 123);
+}
+
+#daySelector {
+  background-color: rgb(211, 152, 152);
+}
+
+#searchBtn {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 30px 10px 30px;
+  background-color: rgb(52, 211, 137);
+  border-radius: 15px;
+  box-shadow: 2px 2px 12px black;
+}
+
+#searchBtn:hover {
+    background-color: rgb(0, 146, 78);
+    transform: scale(1.05);
+}
+
+#exerciseResults {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.exercise-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f3f9ff;
+  width: 50%;
+
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.exercise-card p {
+  margin-top: 1%;
+}
+
+.exercise-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+.exercise-icon img {
+  width: 20px;
+  height: auto;
+}
+
+.add-btn {
+  margin-top: 3%;
+}
+
+.add-btn:hover {
+  transform: scale(1.1);
+}
