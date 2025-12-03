@@ -15,6 +15,19 @@ document.querySelector("#exerciseResults").addEventListener("click", (e) => {
     }
 });
 
+document.addEventListener("click", (e) => {
+  if (e.target.matches(".openModal")) {
+    const id = e.target.dataset.modal;
+    const selected = document.getElementById(`modal-${id}`);
+    selected.classList.remove('closed');
+  }
+  if (e.target.matches(".close")) {
+    const id = e.target.dataset.close;
+    const selected = document.getElementById(`modal-${id}`);
+    selected.classList.add('closed');
+  }
+});
+
 function init() {
     renderRoutine();
     toggleMenu();

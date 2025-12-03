@@ -1,4 +1,4 @@
-import { exerciseResultTemplate } from "./templates.mjs";
+import { exerciseResultTemplate, exerciseResultTemplateModal } from "./templates.mjs";
 
 function searchForExercises(key) {
     let type = document.getElementById("typeSelector").value;
