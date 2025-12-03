@@ -14,8 +14,6 @@ main {
     align-items: center;
     color: rgb(240, 240, 240);
 
-    background-color: rgb(83, 87, 99);
-    box-shadow: 2px 2px 12px rgb(94, 93, 93);
     padding: 50px 0 50px 0;
     width: 80%;
     border-radius: 30px;
@@ -25,7 +23,7 @@ main {
 .form-container h2 {
   font-size: 40px;
   margin-bottom: 2.5%;
-  text-shadow: 1px 1px 12px rgb(155, 155, 155);
+  text-shadow: 1px 1px 14px rgb(155, 155, 155);
 }
 
 #searchForm {
