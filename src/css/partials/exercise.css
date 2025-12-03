@@ -51,24 +51,26 @@ main {
     height: 30px;
     border-radius: 10px;
 
-    box-shadow: 2px 2px 12px black;
+    box-shadow: 1px 1px 10px black;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 8px black;
 }
 
 
 #typeSelector {
-  background-color: rgb(189, 189, 226);
+  background-color: rgb(137, 137, 219);
 }
 
 #muscleSelector {
-  background-color: rgb(184, 184, 151);
+  background-color: rgb(185, 185, 127);
 }
 
 #difficultySelector {
-  background-color: rgb(207, 178, 123);
+  background-color: rgb(206, 172, 109);
 }
 
 #daySelector {
-  background-color: rgb(211, 152, 152);
+  background-color: rgb(214, 136, 136);
 }
 
 #searchBtn {
@@ -182,8 +184,7 @@ main {
   width: 40%;
   max-height: 50vh;
   overflow-y: auto;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  animation: popup 0.25s ease-out;
+  box-shadow: 2px 4px 24px black;
 }
 
 .close {
