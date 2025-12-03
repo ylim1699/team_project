@@ -137,9 +137,9 @@ main {
 
 .week-display {
   padding: 40px;
-  /* border: 2px solid #ccc; */
   border-radius: 15px;
-  background-color: rgb(83, 87, 99);
+  /* border: 2px solid #ccc; */
+  /* background-color: rgb(83, 87, 99); */
   display: flex;
   flex-direction: column;
   align-items: center;
