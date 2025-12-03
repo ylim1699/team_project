@@ -45,7 +45,7 @@ header img {
 
 #side-menu {
   position: fixed;
-  top: 60px;
+  top: 65px;
   right: 0px;
   width: 200px;
   height: 100vh;
@@ -53,7 +53,7 @@ header img {
   transition: left 0.3s ease;
   padding-top: 60px;
   z-index: 1000;
-  border-top: 5px solid rgb(40, 42, 49);
+  border-top: 3px solid #0c0a18;
 
   transform: translateX(100%);
   transition: transform 0.3s ease;
@@ -211,7 +211,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(40, 42, 49);
+  background-color: #0c0a18;
   padding: 10px 0;
   /* border-bottom: 2px solid #ccc; */
   color: black;
@@ -229,6 +229,18 @@ main {
 
 h3 {
   text-align: center;
+}
+
+.delete-btn {
+    background-color: rgb(238, 131, 131);
+    padding: 3px;
+    border-radius: 8px;
+    color: rgb(240, 240, 240);
+}
+
+.delete-btn:hover {
+  background-color: rgb(233, 46, 46);
+  transform: scale(1.1);
 }
 
 @media screen and (max-width) {

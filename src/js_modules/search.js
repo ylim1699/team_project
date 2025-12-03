@@ -26,7 +26,7 @@ function searchForExercises(key) {
         resultsContainer.innerHTML = '';
 
         if (data.length === 0) {
-            resultsContainer.innerHTML = '<p>No exercises found matching the criteria.</p>';
+            resultsContainer.innerHTML = '<p class="no-result">No exercises found matching the criteria.</p>';
             return;
         }
         else {

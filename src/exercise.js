@@ -15,6 +15,9 @@ document.querySelector("#exerciseResults").addEventListener("click", (e) => {
     }
 });
 
+function init() {
+    renderRoutine();
+    toggleMenu();
+}
 
-renderRoutine();
-toggleMenu();
+init();

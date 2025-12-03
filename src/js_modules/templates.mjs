@@ -43,7 +43,7 @@ export function exerciseResultTemplate(exercise, day) {
         data-icon="${icon}" 
         data-type="${exercise.type}"               
         >
-        ➕ Add to Routine
+        Add to Routine
       </button>
     </div>
   `;
@@ -56,7 +56,7 @@ export function routineTemplate(exercise, day, index) {
       <img src="${exercise.icon}" alt="${exercise.type}">
       <img src="${exercise.difficulty}"></img>
       </section>
-      <button class="delete-btn" data-day="${day}" data-index="${index}">❌</button>
+      <button class="delete-btn" data-day="${day}" data-index="${index}">Delete</button>
     </div>`;
 }
 
