@@ -1,48 +1,60 @@
+import cardio from '../images/cardio.png';
+import strength from '../images/strength.png';
+import stretching from '../images/stretch.png';
+import plyometrics from '../images/plyometric.png';
+import powerlifting from '../images/powerlift.png';
+import strongman from '../images/strongman.png';
+import olympics from '../images/olympic.png';
+
 export const exerciseIcons = [
     {
         name: "cardio",
-        link: "../images/cardio.png"
+        link: cardio
     },
     {
         name: "strength",
-        link: "../images/strength.png"
+        link: strength
     },
     {
         name: "stretching",
-        link: "../images/stretch.png"
+        link: stretching
     },
     {
         name: "plyometrics",
-        link: "../images/plyometric.png"
+        link: plyometrics
     },
     {
         name: "powerlifting",
-        link: "../images/powerlift.png"
+        link: powerlifting
     },
     {
         name: "strongman",
-        link: "../images/strongman.png"
+        link: strongman
     },
     {
         name: "olympic_weightlifting",
-        link: "../images/olympic.png"
+        link: olympics
     }
 ];
+
+import beginner from '../images/beginner.png';
+import intermediate from '../images/intermediate.png';
+import expert from '../images/expert.png';
 
 export const exerciseDifficulty = [
     {
         name: "Beginner", 
-        link: "../images/beginner.png",
+        link: beginner,
         value: "1"
     },
     {
         name: "intermediate", 
-        link: "../images/intermediate.png",
+        link: intermediate,
         value: "2"
     },
     {
         name: "expert", 
-        link: "../images/expert.png",
+        link: expert,
         value: "3"
     }
 
