@@ -203,3 +203,13 @@ main {
   background: #d42334;
 }
 
+@media screen and (max-width: 600px) {
+  #searchForm {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .exercise-card {
+    width: 90%;
+    height: auto;
+  }
+}
